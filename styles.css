@@ -1,0 +1,165 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    min-height: 30vh;
+    min-width: 35em;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5em;
+}
+
+.bill {
+    width: 100%;
+}
+
+#dollar {
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 0.1em 0.3em;
+    text-align: right;
+}
+#dollar:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+#person {
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 0.1em 0.3em;
+    text-align: right;
+}
+#person:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+#custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    font-weight: bold;
+}
+#custom:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+.tips{
+    display: grid;
+    grid-template-areas: "label label label"
+                         "tip5 tip10 tip15"
+                         "tip25 tip50 tipCustom";
+    gap: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.tip {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: 0;
+    border-radius: 0.2em;
+    width: 5em;
+    height: 2em;
+}
+.tip:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    font-weight: bold;
+}
+.item7 {grid-area: label;}
+.item1 {grid-area: tip5;}
+.item2 {grid-area: tip10;}
+.item3 {grid-area: tip15;}
+.item4 {grid-area: tip25;}
+.item5 {grid-area: tip50;}
+.item6 {grid-area: tipCustom;}
+
+.people {
+    width: 100%;
+}
+
+.screen {
+    background-color: hsl(183, 100%, 15%);
+    margin: 1.5em;
+    padding: 1.5em;
+    border-radius: 1em;
+    width: 15em;
+}
+
+.amount-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reset {
+    background-color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    width: 100%;
+    height: 2.5em;
+    border-radius: 0.2em;
+    border: 0;
+    margin-top: 3em;
+}
+.reset:hover {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+input {
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    border-radius: 0.5em;
+    width: 100%;
+    height: 2em;
+}
+
+label {
+    color: hsl(183, 100%, 15%);
+}
+
+h1 {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h2 {
+    font-size: 0.5em;
+    color: hsl(184, 14%, 56%);
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+    font-size: 2em;
+}
